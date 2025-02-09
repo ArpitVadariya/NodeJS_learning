@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 
 // Define the MongoDB URL
-// const mongoURL = "mongodb://127.0.0.1:27017/hotels";
+const mongoURL = "mongodb://127.0.0.1:27017/hotels";
 
 mongoose.connect(mongoURL, {
   useNewURLParser: true,
