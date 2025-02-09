@@ -10,6 +10,7 @@ const mongoURL = process.env.MONGODB_URL;
 mongoose.connect(mongoURL, {
   useNewURLParser: true,
   useUnifiedTopology: true,
+  tlsAllowInvalidCertificates: true,
 });
 
 const db = mongoose.connection;
